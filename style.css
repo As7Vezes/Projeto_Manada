@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --c1:#D5F4F5;
+    --c2:#7BACAD;
+    --c3:#EDA579;
+    --c4:#FA8C48;
+    --c5:#FA660A;
+}
+     
+body{
+    background-color: var(--c1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c2);
+}
+
+#logo{
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--c4);
+}
+
+#lista{
+    list-style: none;
+    display: flex;
+}
+
+#item{
+    color: black;
+    border: 2px solid black;
+    list-style: none;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+i{
+    color: var(--c3);
+}
+
+#lista:last-child{
+    margin-right: 30px;
+}
