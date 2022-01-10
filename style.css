@@ -7,51 +7,102 @@
     --c4:#FA8C48;
     --c5:#FA660A;
 }
-     
-body{
-    background-color: var(--c1);
-}
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--c2);
+    background-color: white;
+    border: 3px solid black;
 }
 
-#logo{
-    margin-left: 10px;
+#logo {
+    margin-left: 30px;
     text-decoration: none;
     font-family: 'Shadows Into Light', cursive;
     font-size: 3em;
     font-weight: bold;
-    color: var(--c4);
+    color: black;
+    letter-spacing: 2px;
 }
 
-#lista{
+#lista {
     list-style: none;
     display: flex;
 }
 
-#item{
+#item {
     color: black;
-    border: 2px solid black;
     list-style: none;
     margin: 15px;
     text-decoration: none;
     font-size: 1.5em;
+    letter-spacing: 1px;
 }
 
-i{
-    color: var(--c3);
-}
-
-#lista:last-child{
+#lista:last-child {
     margin-right: 30px;
+}
+
+main {
+    position: relative;
+}
+
+#menu-manada {
+    border: 3px solid black;
+    width: 500px;
+    margin: 50px 0 0px 20px;
+    height: 600px;
+    position: fixed;
+    padding: 15px;
+}
+
+#menu-manada h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#menu-manada ul {
+    margin: 50px 20px 0 20px;
+    border: 2px solid black;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+}
+
+#menu-manada li {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#menu-manada li a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#conteudo {
+    position: absolute;
+    border: 3px solid black;
+    top: 50px;
+    left: 550px;
+    width: 1350px;
+    height: 600px;
+    padding: 15px;
+}
+
+#conteudo h1, #conteudo h2 {
+    margin-bottom: 10px;
+}
+
+#conteudo p {
+    margin-bottom: 5px;
 }
